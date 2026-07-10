@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to the Future</title>
+    <!-- Pointing exactly to your css folder -->
+    <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+
+    <canvas id="bg-canvas"></canvas>
+
+    <div class="welcome-card">
+        <div class="logo-icon">✨</div>
+        <h1>Welcome Back</h1>
+        <div class="typing-text">
+            <span id="text"></span><span class="cursor">&nbsp;</span>
+        </div>
+        
+        <div class="btn-container">
+            <!-- This successfully takes you to your quiz file -->
+            <a href="home.html" class="btn btn-primary">Get Started</a>
+            <button id="info-toggle" class="btn btn-secondary">Learn More</button>
+        </div>
+
+        <div id="info-drawer" class="info-drawer hidden">
+            <h4>📋 Quiz Overview:</h4>
+            <ul>
+                <li><strong>15 Dynamic MCQs</strong> in English & Telugu</li>
+                <li><strong>Real-time feedback</strong> with structural breakdowns</li>
+                <li>Progress tracking metrics synced to your live scoreboard</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Links to script.js in the root folder -->
+    <script src="script.js"></script>
+</body>
+</html>

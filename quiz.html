@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Current Affairs & GK Quiz - 2026</title>
+    <!-- Linking external CSS stylesheet -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div class="container">
+
+    <!-- 1. WELCOME SCREEN PANEL -->
+    <div id="welcome-screen" class="welcome-box">
+        <div class="welcome-badge">July 2026 Edition</div>
+        <h2>Welcome to the Interactive Practice Assessment</h2>
+        <p class="welcome-desc">
+            Test your knowledge on recent global reports, national educational frameworks, defense milestones, and sports updates. This evaluation features questions in both <strong>English & Telugu</strong> with real-time feedback.
+        </p>
+        
+        <div class="quiz-rules">
+            <h4>📋 Test Instructions:</h4>
+            <ul>
+                <li>Total Questions: <strong>15 Multiple Choice</strong></li>
+                <li>Instant Review: Explanations show right after clicking an answer.</li>
+                <li>Tracking: A live progress scoreboard stays stuck to the top of your screen.</li>
+            </ul>
+        </div>
+
+        <button id="start-btn" class="primary-btn">I am Ready to Start the Quiz →</button>
+    </div>
+
+    <!-- 2. INTERACTIVE QUIZ PORTAL (Hidden initially) -->
+    <div id="quiz-portal" class="hidden">
+        <!-- Live Sticky Progress Scoreboard -->
+        <div class="score-banner">
+            <span class="score-text">Live Progress Portal</span>
+            <span id="score-counter">Score: 0 / 15</span>
+        </div>
+
+        <!-- Header Section -->
+        <header>
+            <h1>Current Affairs & General Knowledge Quiz</h1>
+            <p class="subtitle">Comprehensive 15-Question Interactive Practice Test — 2026</p>
+        </header>
+
+        <!-- Quiz container where questions will inject dynamically via JavaScript -->
+        <div id="quiz-container"></div>
+    </div>
+
+</div>
+
+<!-- Linking external JavaScript file -->
+<script src="script.js"></script>
+</body>
+</html>

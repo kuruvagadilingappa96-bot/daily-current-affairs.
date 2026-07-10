@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Premium Online Examination Portal</title>
+    <style>
+        :root {
+            --primary-bg: #f8fafc;
+            --card-bg: #ffffff;
+            --text-main: #1e293b;
+            --text-muted: #64748b;
+            --border-color: #000000;
+        }
+
+        body {
+            font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+            background-color: var(--primary-bg);
+            margin: 0;
+            padding: 20px 20px;
+            color: var(--text-main);
+        }
+
+        .portal-wrapper {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        h1.portal-title {
+            text-align: center;
+            font-size: 2.2rem;
+            color: var(--text-main);
+            margin-bottom: 40px;
+            font-weight: 800;
+            letter-spacing: -0.025em;
+        }
+
+        .outer-container {
+            border: 1px solid var(--border-color);
+            padding: 40px 30px;
+            background-color: #f2c3bf;
+            box-shadow: 8px 8px 0px 0px rgba(0,0,0,0.1);
+        }
+
+        .test-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border: 1px solid var(--border-color);
+            padding: 8px 9px;
+            margin-bottom: 10px;
+            background-color: var(--card-bg);
+            box-shadow: 4px 4px 0px 0px rgba(0,0,0,0.05);
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+
+        .test-item:hover {
+            transform: translate(-2px, -2px);
+            box-shadow: 6px 6px 0px 0px rgba(0,0,0,0.1);
+        }
+
+        .test-item:last-child {
+            margin-bottom: 0;
+        }
+
+        .test-info {
+            display: flex;
+            flex-direction: column;
+            gap: 4px;
+        }
+
+        .test-title {
+            font-size: 1.2rem;
+            font-weight: 700;
+            color: #031cff;
+        }
+
+        .test-schedule {
+            font-size: 0.9rem;
+            color: var(--text-muted);
+            font-weight: 500;
+        }
+
+        .open-btn {
+            font-size: 1rem;
+            color: var(--border-color);
+            text-decoration: none;
+            border: 1px solid var(--border-color);
+            padding: 8px 24px;
+            background-color: transparent;
+            cursor: pointer;
+            font-weight: 700;
+            text-transform: lowercase;
+            transition: all 0.15s ease-in-out;
+            display: inline-block;
+            text-align: center;
+        }
+
+        .open-btn:hover {
+            background-color: var(--border-color);
+            color: #ffffff;
+        }
+
+
+.footer{
+   background-color: #d4bff5;
+   border-top: var(--border);
+   position: sticky;
+   bottom: 0; left: 0; right: 0;
+   text-align: center;
+   font-size: 1rem;
+   padding:1.2rem 1.8rem;
+   color:var(--black);
+   margin-top: 1rem;
+   z-index: 1000;
+   /* padding-bottom: 9.5rem; */
+}
+
+.footer span{
+   color:var(--main-color);
+}
+
+
+        
+    </style>
+</head>
+<body>
+
+<div class="portal-wrapper">
+    <div id="dashboard-view">
+        <h1 class="portal-title">Daily Current Affairs Quiz</h1>
+        <div class="outer-container">
+            
+            <div class="test-item">
+                <div class="test-info">
+                    <span class="test-title">Day 1</span>
+                    <span class="test-schedule">Current Affairs: July 9, 2026 </span>
+                </div>
+                <a href="quiz.html" class="open-btn">open</a>
+            </div>
+
+            <div class="test-item">
+                <div class="test-info">
+                    <span class="test-title">Day 2</span>
+                    <span class="test-schedule">Current Affairs: July 10, 2026 </span>
+                </div>
+                <a href="aptest2.html" class="open-btn">open</a>
+            </div>
+            
+        </div>
+    </div>
+</div>
+
+ <footer class="footer">
+
+   “ఈ క్షణంలో ఉత్తమంగా చేయడం, మిమ్మల్ని తదుపరి క్షణానికి ఉత్తమ స్థితిలో ఉంచుతుంది.”
+
+</footer>
+
+
+
+
+</body>
+</html>
