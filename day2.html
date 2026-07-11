@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AP & TS Police Online Test Portal</title>
+    <link rel="stylesheet" href="css/day2.css">
+</head>
+<body>
+
+<canvas id="bg-canvas"></canvas>
+
+<div class="container">
+    <!-- Live Header Score HUD -->
+    <div id="score-banner" class="score-banner hidden">
+        <span class="score-text">Candidate: <span id="user-display-name">Guest</span></span>
+        <span id="score-counter">Score: 0 / 15</span>
+    </div>
+
+    <!-- phase 1: USER REGISTRATION MODAL -->
+    <div id="login-section" class="quiz-card login-box">
+        <div class="portal-badge">BLP Logics Portal</div>
+        <h2>AP & TS Police Test Portal</h2>
+        <h3>10/07/26 Current Affairs Core Examination</h3>
+        <p>Authenticate your profile details by entering your full name below to start your mock window.</p>
+        
+        <div class="input-group">
+            <input type="text" id="username-input" placeholder="Enter full name..." autocomplete="off">
+            <button id="enter-quiz-btn" class="btn-submit">Verify Credentials & Start</button>
+        </div>
+    </div>
+
+    <!-- phase 2: DYNAMIC TEST PORTAL -->
+    <div id="quiz-portal" class="hidden">
+        <div id="quiz-container"></div>
+        <button id="submit-quiz-btn" class="btn-final-submit">Finalize Assessment & Calculate Rank</button>
+    </div>
+
+    <!-- phase 3: RESULT METRICS & LIVE LEADERBOARD -->
+    <div id="result-section" class="quiz-card hidden">
+        <div class="result-header">
+            <h2>Assessment Finalized!</h2>
+            <div class="final-score-badge">Final Score: <span id="final-score">0</span> / 15</div>
+            <div class="rank-badge">Global Standing: <span id="final-rank">Calculating...</span></div>
+        </div>
+
+        <div class="leaderboard-box">
+            <h3>🏆 Live Participant Performance Standings</h3>
+            <table class="leaderboard-table">
+                <thead>
+                    <tr>
+                        <th>Rank</th>
+                        <th>Participant Name</th>
+                        <th>Score Secured</th>
+                    </tr>
+                </thead>
+                <tbody id="leaderboard-rows">
+                    <!-- Leaderboard streams dynamically here -->
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+
+<script src="day2.js"></script>
+</body>
+</html>
